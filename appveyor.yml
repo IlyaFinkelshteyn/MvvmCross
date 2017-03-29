@@ -11,7 +11,8 @@
     NUGET_APIKEY:
       secure: I7T89cNuXIoOooGTaZm/nKrJ5JwZpt3F82D6Y7bJoxO5yQ6hpDnz0xQhef/KKr0G
   init:
-  - ps: write-host $env:APPVEYOR_BUILD_WORKER_IMAGE
+  - ps: write-host $env:MSBuildExtensionsPath
+  - ps: $env:MSBuildExtensionsPath = "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild"
   - cd \
   - appveyor DownloadFile http://dl.google.com/android/android-sdk_r24.4.1-windows.zip
   - 7z x android-sdk_r24.4.1-windows.zip > nul
@@ -43,7 +44,8 @@
     NUGET_APIKEY:
       secure: m3uewWCh6Y5jqTZIfwMDfs8GWdbwTZjfiEl13AWY7T3u3bPspGA/lgwe8jdxjBm9
   init:
-  - ps: write-host $env:APPVEYOR_BUILD_WORKER_IMAGE
+  - ps: write-host $env:MSBuildExtensionsPath
+  - ps: $env:MSBuildExtensionsPath = "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild"
   - cd \
   - appveyor DownloadFile http://dl.google.com/android/android-sdk_r24.4.1-windows.zip
   - 7z x android-sdk_r24.4.1-windows.zip > nul
