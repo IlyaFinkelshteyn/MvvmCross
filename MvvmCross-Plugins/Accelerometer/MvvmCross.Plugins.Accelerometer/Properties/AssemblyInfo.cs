@@ -1,4 +1,4 @@
-﻿// <copyright file="AssemblyInfo.cs" company="Cirrious">
+// <copyright file="AssemblyInfo.cs" company="Cirrious">
 // (c) Copyright Cirrious. http://www.cirrious.com
 // This source is subject to the Microsoft Public License (Ms-PL)
 // Please see license.txt on http://opensource.org/licenses/ms-pl.html
@@ -33,7 +33,8 @@ using System.Resources;
 //
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
+// [assembly: AssemblyVersion("4.5.0.0")]
 
-[assembly: AssemblyVersion("4.0.0.0")]
-[assembly: AssemblyFileVersion("4.0.0.0")]
+[assembly: AssemblyVersion("4.5.0.0")]
+[assembly: AssemblyFileVersion("4.5.0.0")]
+[assembly: AssemblyInformationalVersion("4.5.0-unstable.1993+Branch.develop.Sha.716e69e35839deec5eeb4438e3ba4f9e58cdac72")]

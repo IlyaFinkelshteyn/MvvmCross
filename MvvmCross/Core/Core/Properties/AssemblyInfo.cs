@@ -1,4 +1,4 @@
-﻿// AssemblyInfo.cs
+// AssemblyInfo.cs
 
 // MvvmCross is licensed using Microsoft Public License (Ms-PL)
 // Contributions and inspirations noted in readme.md and license.txt
@@ -31,6 +31,7 @@ using System.Resources;
 // You can specify all the values or you can default the Revision and Build Numbers
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("4.0.0.0")]
-[assembly: AssemblyFileVersion("4.0.0.0")]
+[assembly: AssemblyVersion("4.5.0.0")]
+[assembly: AssemblyFileVersion("4.5.0.0")]
 [assembly: NeutralResourcesLanguage("en-US")]
+[assembly: AssemblyInformationalVersion("4.5.0-unstable.1993+Branch.develop.Sha.716e69e35839deec5eeb4438e3ba4f9e58cdac72")]
