@@ -11,6 +11,7 @@
     NUGET_APIKEY:
       secure: I7T89cNuXIoOooGTaZm/nKrJ5JwZpt3F82D6Y7bJoxO5yQ6hpDnz0xQhef/KKr0G
   init:
+  - ps: write-host $env:APPVEYOR_BUILD_WORKER_IMAGE
   - cd \
   - appveyor DownloadFile http://dl.google.com/android/android-sdk_r24.4.1-windows.zip
   - 7z x android-sdk_r24.4.1-windows.zip > nul
@@ -42,6 +43,7 @@
     NUGET_APIKEY:
       secure: m3uewWCh6Y5jqTZIfwMDfs8GWdbwTZjfiEl13AWY7T3u3bPspGA/lgwe8jdxjBm9
   init:
+  - ps: write-host $env:APPVEYOR_BUILD_WORKER_IMAGE
   - cd \
   - appveyor DownloadFile http://dl.google.com/android/android-sdk_r24.4.1-windows.zip
   - 7z x android-sdk_r24.4.1-windows.zip > nul
