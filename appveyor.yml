@@ -23,9 +23,9 @@
   - echo y | "%ANDROID_HOME%\tools\android.bat" update sdk -u -a -t extra-google-m2repository
   - echo y | "%ANDROID_HOME%\tools\android.bat" update sdk -u -a -t extra-android-m2repository
   build_script:
-  - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-  - copy nuget.exe c:\Tools\NuGet /y
-  - '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"'
+  #- appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  #- copy nuget.exe c:\Tools\NuGet /y
+  #- '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"'
   - ps: .\build.ps1
   test: off
   on_finish:
